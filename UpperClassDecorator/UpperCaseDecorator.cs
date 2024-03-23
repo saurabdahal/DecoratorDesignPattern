@@ -5,12 +5,12 @@ namespace DecoratorDesignPattern.ComponentDecorator
 {
     class UpperCaseDecorator : Decorator<string>
     {
-        public UpperCaseDecorator(IComponent<T> component) : base(component)
+        public UpperCaseDecorator(IComponent<string> component) : base(component)
         { }
-            public override T GetText()
+        public override string GetText()
         {
             return base.GetText().ToUpper();
         }
-    }
+
     }
 }

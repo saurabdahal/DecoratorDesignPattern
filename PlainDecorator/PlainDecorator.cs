@@ -3,11 +3,9 @@
 
 namespace DecoratorDesignPattern.ComponentDecorator
 {
-    class PlainDecorator : Decorator<string>
+    class PlainDecorator(IComponent<string> component) : Decorator<string>(component)
     {
-        public PlainDecorator(IComponent<T> component) : base(component) { }
-        
-        public override T GetText()
+        public override string GetText()
         {
             return "This is a text from Plain Decorator";   
         }
