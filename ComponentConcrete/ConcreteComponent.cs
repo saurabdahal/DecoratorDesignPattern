@@ -11,7 +11,7 @@ namespace DecoratorDesignPattern.ComponentConcrete
     {
         public string GetText()
         {
-            return "this is a string";
+            return "This is a string from ConcreteComponent";
         }
     }
 }

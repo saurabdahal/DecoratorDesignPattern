@@ -7,7 +7,7 @@ namespace DecoratorDesignPattern.ComponentDecorator
     {
         public override string GetText()
         {
-            return "This is a text from Plain Decorator";   
+            return "Thi is the text from plain decorator."+base.GetText();
         }
     }
 }
