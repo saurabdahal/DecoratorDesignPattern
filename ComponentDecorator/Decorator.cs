@@ -7,12 +7,24 @@ using DecoratorDesignPattern.ComponentInterface;
 
 namespace DecoratorDesignPattern.ComponentDecorator
 {
-    abstract class Decorator<String>(IComponent<string> component) : IComponent<string>
+    /// <summary>
+    /// This is the abstract class that represents the base decorator.
+    /// </summary>
+    abstract class Decorator<T> : IComponent<T>
     {
 
-        protected IComponent<string> component = component;
+        protected IComponent<T> component;
 
-        public virtual string GetText()
+          public Decorator(IComponent<T> component)
+        {
+            this.component = component;
+        }
+
+        /// <summary>
+        /// Fetches the text from the component.
+        /// </summary>
+        /// <returns>The text from the component.</returns>
+        public virtual T GetText()
         {
             return component.GetText();
         }
