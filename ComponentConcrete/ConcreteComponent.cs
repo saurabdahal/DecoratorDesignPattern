@@ -10,9 +10,9 @@ namespace DecoratorDesignPattern.ComponentConcrete
     class ConcreteComponent<String> : IComponent<string>
     {
         /// <summary>
-        /// This is the concerete class that implements the <see cref="IComponent{T}" /> interface.
+        /// This is the concerete class that implements the IComponent interface.
         /// </summary>
-        /// <returns></returns>
+        /// <Author>Saurav Dahal</Author>
         public string GetText()
         {
             return "This is a string from ConcreteComponent";

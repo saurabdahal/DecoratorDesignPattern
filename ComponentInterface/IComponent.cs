@@ -13,7 +13,7 @@ namespace DecoratorDesignPattern.ComponentInterface
         /// Gets the message of the component
         /// </summary>
         /// <returns>Text defined in the concerete classes</returns>
-        /// 
+        /// <Author>Saurav Dahal</Author>
         T GetText();
     }
 }

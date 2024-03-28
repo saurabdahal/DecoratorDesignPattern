@@ -4,8 +4,9 @@
 namespace DecoratorDesignPattern.ComponentDecorator
 {
     /// <summary>
-    /// This class inherits from <see cref="Decorator{T}">Decorator</see> and  override the method to add own message
+    /// This class inherits from Decorator class and  override the method to add own message
     /// </summary>
+    /// <Author>Saurav Dahal</Author>
     class PlainDecorator(IComponent<string> component) : Decorator<string>(component)
     {
         public override string GetText()

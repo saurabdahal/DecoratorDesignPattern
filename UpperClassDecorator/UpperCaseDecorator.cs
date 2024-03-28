@@ -4,8 +4,9 @@
 namespace DecoratorDesignPattern.ComponentDecorator
 {
     /// <summary>
-    /// This class inherits from <see cref="Decorator{T}">Decorator</see> and  override the method to convert base text to uppercase.
+    /// This class inherits from Decorator and  override the method to convert base text to uppercase.
     /// </summary>
+    /// <Author>Saurav Dahal</Author>
     class UpperCaseDecorator : Decorator<string>
     {
         public UpperCaseDecorator(IComponent<string> component) : base(component)

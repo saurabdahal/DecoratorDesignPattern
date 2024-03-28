@@ -23,7 +23,7 @@ namespace DecoratorDesignPattern.ComponentDecorator
         /// <summary>
         /// Fetches the text from the component.
         /// </summary>
-        /// <returns>The text from the component.</returns>
+        /// <Author>Saurav Dahal</Author>
         public virtual T GetText()
         {
             return component.GetText();
