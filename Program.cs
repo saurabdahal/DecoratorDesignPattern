@@ -15,13 +15,13 @@ namespace DecoratorDesignPattern
             IComponent<string> colorDecorator = new ColorDecorator(component);
             IComponent<string> upperCaseDecorator = new UpperCaseDecorator(component);
 
-            Console.WriteLine("Plain Decorator:");
+            Console.WriteLine("This is the response from Plain Decorator:");
             Console.WriteLine(plainDecorator.GetText());
 
-            Console.WriteLine("\nColor Decorator:");
+            Console.WriteLine("\nThis is the response from Color Decorator:");
             Console.WriteLine(colorDecorator.GetText());
 
-            Console.WriteLine("\nUppercase Decorator:");
+            Console.WriteLine("\nThis is the response from Uppercase Decorator:");
             Console.WriteLine(upperCaseDecorator.GetText());
         }
     }
